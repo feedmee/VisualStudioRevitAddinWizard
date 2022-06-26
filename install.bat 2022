@@ -7,10 +7,10 @@ if exist vb (goto okvb) else (echo "No vb folder found." && goto exit)
 
 if [2022]==[] (
   echo Using version 
-  set "D=%userprofile%\Documents\Visual Studio 2022\Templates\ProjectTemplates"
+  set "D=%userprofile%\OneDrive\Belgeler\Visual Studio 2022\Templates\ProjectTemplates"
 ) else (
-  echo Using version %1
-  set "D=%userprofile%\Documents\Visual Studio 2022\Templates\ProjectTemplates"
+  echo Using version 2022
+  set "D=%userprofile%\OneDrive\Belgeler\Visual Studio 2022\Templates\ProjectTemplates"
 )
 
 set "F=%TEMP%\Revit2023AddinWizardCs0.zip"
