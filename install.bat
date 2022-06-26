@@ -5,12 +5,12 @@ if exist cs (goto okcs) else (echo "No cs folder found." && goto exit)
 if exist vb (goto okvb) else (echo "No vb folder found." && goto exit)
 :okvb
 
-if [%1]==[] (
-  echo Please specify Visual Studio version, e.g., 2017
-  goto exit
+if [2022]==[] (
+  echo Using version 
+  set "D=%userprofile%\Documents\Visual Studio 2022\Templates\ProjectTemplates"
 ) else (
   echo Using version %1
-  set "D=%userprofile%\Documents\Visual Studio %1\Templates\ProjectTemplates"
+  set "D=%userprofile%\Documents\Visual Studio 2022\Templates\ProjectTemplates"
 )
 
 set "F=%TEMP%\Revit2023AddinWizardCs0.zip"
